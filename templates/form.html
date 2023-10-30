@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification</title>
+</head>
+<body>
+<h1>Verification Form</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input name="userAge" placeholder="Enter age" type="number"><br><br>
+    <input name="userEmail" placeholder="Enter Email" type="email"><br><br>
+    <input name="userPassword" placeholder="Enter Password" type="password"><br><br>
+    <input  value="Verify" type="submit">
+
+</form>
+<p>{{ age_result }}</p>
+</body>
+</html>

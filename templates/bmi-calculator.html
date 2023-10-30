@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI  CALCULATOR</title>
+</head>
+<body>
+<h1>Enter weight and Height to Calculate your BMI</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    Name: <input name="jina" placeholder="Enter Name" type="text"><br><br>
+    Weight:<input name="uzito" placeholder="Enter Weight" type="text"><br><br>
+    Height: <input name="urefu" placeholder="Enter Height" type="text"><br><br>
+    <input value="calculate" type="submit">
+</form>
+<p>{{ name }}</p>
+<p>{{ bmi }}</p>
+<p>{{ bmi_result }}</p>
+
+</body>
+</html>
